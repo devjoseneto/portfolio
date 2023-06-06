@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--font-1);
 }
 
 :root {
@@ -18,3 +19,81 @@
     --color-5: #DDA448;
 }
 
+body, html {
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    background: var(--color-1) url("../images/BACKGROUND.png");
+    color: #F5EDF0;
+}
+
+nav {
+    display: none;
+}
+
+main > div#imgs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+main > div > img#logo {
+    width: 40px;
+}
+
+main > div > img#menu-icon {
+    width: 30px;
+    cursor: pointer;
+}
+
+nav > ul > li > a {
+    display: block;
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    border-top: 1px solid var(--color-2);
+}
+
+section#aboutme {
+    display: block;
+    border-top: 2px solid #5c5c74;
+}
+
+section#aboutme > h1 {
+    display: block;
+    font-family: var(--font-2);
+    font-weight: 400;
+    font-size: 2.7em;
+    margin-top: 50px;
+    text-align: center;
+}
+
+section#aboutme > h1 > span {
+    color: var(--color-3);
+    font-size: 1.4em;
+}
+
+section#aboutme > img {
+    display: block;
+    margin: auto;
+}
+
+section#aboutme > img#profile-photo {
+    width: 70%;
+}
+
+section#aboutme > img#web-developer-logo {
+    margin-top: -75px;
+}
+
+section#aboutme > p {
+    width: 80%; 
+    margin: 20px auto;
+    text-align: center;
+    font-size: 0.9em;
+}

@@ -1,43 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DevJose</title>
 
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="#aboutme">ABOUT ME</a></li>
-            <li><a href="#skills">SKILLS</a></li>
-            <li><a href="#projects">PROJECTS</a></li>
-            <li><a href="#contactme">CONTACT ME</a></li>
-        </ul>
-    </nav>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
     <main>
-        <section id="aboutme">
-            <h1>Hello, I'm José Neto</h1>
-            <p>Web Developer</p>
-            <p>Sou estudante de Análise e Desenvolvimento de Sistemas e estou aprendendo as tecnologias HTML5, CSS3 e JavaScript. Meu objetivo é me tornar um desenvolvedor web completo e criar soluções inovadoras para problemas reais. Estou sempre buscando aprender mais e melhorar minhas habilidades para me tornar um profissional melhor.</p>
-            <div id="social-container">
-                <p>FIND ME ON</p>
-                <img src="" alt="">
-                <img src="" alt="">
-            </div>
-            <img id="photo" src="" alt="">
-        </section>
-        <section id="skills">
-            
-        </section>
-        <section id="projects">
+      <div id="imgs">
+        <img id="logo" src="assets/images/code-icon.svg" alt="" />
+        <img id="menu-icon" src="assets/images/menu.svg" alt="" onclick="changeMenu()"/>
+      </div>
+      <nav id="nav">
+        <ul>
+          <li><a href="#aboutme">SOBRE MIM</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#projects">PROJETOS</a></li>
+          <li><a href="#contactme">CONTATE MIM</a></li>
+        </ul>
+      </nav>
+      <section id="aboutme">
+        <h1>
+          Hello, I'm<br>
+          <span>José Neto</span>
+        </h1>
 
-        </section>
-        <section id="contactme">
+        <img id="profile-photo" src="assets/images/profile-photo.png" alt="">
+        <img id="web-developer-logo" src="assets/images/web-developer-icon.svg" alt="">
 
-        </section>
+        <p>
+          Sou estudante de Análise e Desenvolvimento de Sistemas e estou
+          aprendendo as tecnologias HTML5, CSS3 e JavaScript. Meu objetivo é me
+          tornar um desenvolvedor web completo e criar soluções inovadoras para
+          problemas reais. Estou sempre buscando aprender mais e melhorar minhas
+          habilidades para me tornar um profissional melhor.
+        </p>
+        <div id="social-container">
+          <p>FIND ME ON</p>
+          <img src="" alt="" />
+          <img src="" alt="" />
+        </div>
+        <img id="photo" src="" alt="" />
+      </section>
+
+      <section id="skills"></section>
+
+      <section id="projects"></section>
+
+      <section id="contactme"></section>
     </main>
-</body>
+
+    <script>
+        function changeMenu() {
+            if (nav.style.display == 'none') {
+                nav.style.display = 'block'
+            } else {
+                nav.style.display = 'none'
+            }
+        }
+    </script>
+  </body>
 </html>
