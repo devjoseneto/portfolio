@@ -1,140 +1,221 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--font-1);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-1);
 }
 
 :root {
-    --font-1: 'Urbanist', sans-serif;
-    --font-2: 'Work Sans', sans-serif;
-    --color-1: #2E2E3A;
-    --color-2: #F5EDF0;
-    --color-3: #3E92CC;
-    --color-4: #80CED7;
-    --color-5: #DDA448;
+  --font-1: "Urbanist", sans-serif;
+  --font-2: "Work Sans", sans-serif;
+  --color-1: #2e2e3a;
+  --color-2: #f5edf0;
+  --color-3: #3e92cc;
+  --color-4: #80ced7;
+  --color-5: #dda448;
 }
 
-body, html {
-    width: 100vw;
-    height: 100vh;
+body {
+  height: 100vh;
 }
 
 main {
-    background: var(--color-1) url("../images/BACKGROUND.png") no-repeat center center;
-    background-size: cover;
-    color: #F5EDF0;
+  background: var(--color-1) url("../images/BACKGROUND.png") no-repeat center
+    center;
+  background-size: cover;
+  color: #f5edf0;
 }
 
 nav {
-    display: none;
+  display: none;
 }
 
 main > div#imgs {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
 }
 
 main > div > img#logo {
-    width: 40px;
+  width: 40px;
 }
 
 main > div > img#menu-icon {
-    width: 30px;
-    cursor: pointer;
+  width: 30px;
+  cursor: pointer;
 }
 
 nav > ul > li > a {
-    display: block;
-    text-align: center;
-    margin: auto;
-    text-decoration: none;
-    color: white;
-    padding: 15px;
-    border-top: 2px solid #5c5c74;
+  display: block;
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  border-top: 2px solid #5c5c74;
 }
 
 nav > ul > li > a:hover {
-    background-color: var(--color-3);
+  background-color: var(--color-3);
 }
 
 section#aboutme {
-    display: block;
-    border-top: 2px solid #5c5c74;
+  display: block;
+  border-top: 2px solid #5c5c74;
 }
 
 section#aboutme > h1 {
-    display: block;
-    font-family: var(--font-2);
-    font-weight: 400;
-    font-size: 2.4em;
-    margin-top: 50px;
-    text-align: center;
+  display: block;
+  font-family: var(--font-2);
+  font-weight: 400;
+  font-size: 2.4em;
+  margin-top: 50px;
+  text-align: center;
 }
 
 section#aboutme > h1 > span {
-    color: var(--color-3);
-    font-size: 1.5em;
+  color: var(--color-3);
+  font-size: 1.5em;
 }
 
 section#aboutme > img {
-    display: block;
-    margin: auto;
+  display: block;
+  margin: auto;
 }
 
 section#aboutme > img#profile-photo {
-    width: 70%;
+  width: 70%;
 }
 
 section#aboutme > img#web-developer-logo {
-    margin-top: -75px;
+  margin-top: -75px;
 }
 
 section#aboutme > p {
-    width: 80%; 
-    margin: 20px auto;
-    text-align: center;
-    font-size: 0.9em;
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 0.9em;
 }
 
 div#social-container {
-    display: block;
-    width: 150px;
-    text-align: center;
-    margin: auto;
+  display: block;
+  width: 150px;
+  text-align: center;
+  margin: auto;
 }
 
 div#social-container > a > img.social-field {
-    padding: 10px;
-    background-color: #48485a9e;
-    border-radius: 12px;
-    margin: 5px 3px;
-    width: 45px;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  background-color: #48485a9e;
+  border-radius: 12px;
+  margin: 5px 3px;
+  width: 45px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 div#social-container > a > img.social-field:hover {
-    background-color: var(--color-3);
+  background-color: var(--color-3);
 }
 
 section#aboutme > div#scroll-icon {
-    display: flex;
-    justify-content: end;
-    padding: 10px 20px 20px 10px;
-    margin-top: -50px;
+  display: flex;
+  justify-content: end;
+  padding: 10px 20px 20px 10px;
+  margin-top: -50px;
 }
 
 section#aboutme > div#scroll-icon > p {
-    line-height: 32px;
-    color: var(--color-2);
+  line-height: 32px;
+  color: var(--color-2);
 }
 
 section#aboutme > div#scroll-icon > img {
-    width: 35px;
+  width: 35px;
+}
+
+section#skills {
+  background-color: var(--color-2);
+  padding-bottom: 30px;
+  color: #2e2e3a;
+}
+
+section#skills > h1 {
+  color: var(--color-3);
+  padding: 30px 40px;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+section#skills > div#container-skills {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 15px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.20);
+    border-radius: 15px;
+}
+
+div#container-skills > h1 {
+  padding-top: 20px;
+  padding-left: 14px;
+  color: var(--color-3);
+  font-weight: 500;
+}
+
+div#container-skills > div#hard-skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div#hard-skills > div.hard-skill-field {
+  background-color: #dadada8a;
+  width: 100px;
+  margin: 20px 14px 0px 14px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.30);
+  border-radius: 8px;
+}
+
+div#hard-skills > div.hard-skill-field:hover {
+  position: relative;
+  top: -2px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.30);
+}
+
+div.hard-skill-field > img {
+  display: block;
+  width: 80px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+div.hard-skill-field > h1 {
+  margin: 20px 0px 15px 0px;
+  text-align: center;
+  color: var(--color-3);
+  font-weight: 400;
+  font-family: var(--font-2);
+  font-size: 1em;
+}
+
+div#soft-skills {
+  margin: 20px 14px 0px 14px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div#soft-skills > p {
+  padding: 10px;
+  margin: 3px;
+  background-color: #dadada8a;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+}
+
+div#soft-skills > p:hover {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.30);
 }
