@@ -25,7 +25,8 @@ body, html {
 }
 
 main {
-    background: var(--color-1) url("../images/BACKGROUND.png");
+    background: var(--color-1) url("../images/BACKGROUND.png") no-repeat center center;
+    background-size: cover;
     color: #F5EDF0;
 }
 
@@ -56,7 +57,11 @@ nav > ul > li > a {
     text-decoration: none;
     color: white;
     padding: 15px;
-    border-top: 1px solid var(--color-2);
+    border-top: 2px solid #5c5c74;
+}
+
+nav > ul > li > a:hover {
+    background-color: var(--color-3);
 }
 
 section#aboutme {
@@ -96,4 +101,39 @@ section#aboutme > p {
     margin: 20px auto;
     text-align: center;
     font-size: 0.9em;
+}
+
+div#social-container {
+    display: block;
+    width: 150px;
+    text-align: center;
+    margin: auto;
+}
+
+div#social-container > a > img.social-field {
+    padding: 10px;
+    background-color: #48485a9e;
+    border-radius: 12px;
+    margin: 5px 3px;
+    width: 45px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+div#social-container > a > img.social-field:hover {
+    background-color: var(--color-3);
+}
+
+section#aboutme > div#scroll-icon {
+    display: flex;
+    justify-content: end;
+    padding: 10px 20px 20px 10px;
+}
+
+section#aboutme > div#scroll-icon > p {
+    line-height: 32px;
+    color: var(--color-2);
+}
+
+section#aboutme > div#scroll-icon > img {
+    width: 35px;
 }
