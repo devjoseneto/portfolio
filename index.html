@@ -126,6 +126,15 @@
     </main>
 
     <script>
+        function changeWidth() {
+          let field = document.querySelector('.hard-skill-field')
+
+          if (window.innerWidth >= 360) {
+            field.style.width = "105px"
+          } else {
+            field.style.width = "90px"
+          }
+        }
         function changeMenu() {
             if (nav.style.display == 'none') {
                 nav.style.display = 'block'
