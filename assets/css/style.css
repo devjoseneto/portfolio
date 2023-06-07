@@ -153,7 +153,7 @@ section#skills > h1 {
 }
 
 section#skills > div#container-skills {
-    width: 80%;
+    width: 400px;
     margin: auto;
     padding-bottom: 15px;
     background-color: #ffffff;
@@ -171,20 +171,22 @@ div#container-skills > h1 {
 div#container-skills > div#hard-skills {
   display: flex;
   flex-wrap: wrap;
+  gap: 29px;
+  padding: 20px;
 }
 
 div#hard-skills > div.hard-skill-field {
-  background-color: #dadada8a;
+  background-image: linear-gradient(to top, rgba(222, 222, 222, 0.5), rgba(222, 222, 222, 0.1));
   width: 100px;
-  margin: 20px 14px 0px 14px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.30);
+  /* margin: 20px 16px 0px 16px; */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.20);
   border-radius: 8px;
 }
 
 div#hard-skills > div.hard-skill-field:hover {
   position: relative;
   top: -2px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.30);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
 }
 
 div.hard-skill-field > img {
@@ -217,5 +219,5 @@ div#soft-skills > p {
 }
 
 div#soft-skills > p:hover {
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.30);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.20);
 }
